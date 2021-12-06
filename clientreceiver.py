@@ -3,8 +3,8 @@ import cv2
 
 # create socket
 client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host_ip = '192.168.0.232' # paste your server ip address here
-port = 9999
+host_ip = 'xxx.xxx.xxx.xxx' # paste your server ip address here
+port = ####
 client_socket.connect((host_ip,port)) # a tuple
 data = b""
 payload_size = struct.calcsize("Q")
@@ -13,7 +13,7 @@ payload_size = struct.calcsize("Q")
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 font = cv2.FONT_HERSHEY_SIMPLEX
 
-cap = cv2.VideoCapture("tcp://192.168.0.232:9999")
+cap = cv2.VideoCapture("Protocol://Ip.ip.ip.ip:port")
 
 while True:
     while len(data) < payload_size:
