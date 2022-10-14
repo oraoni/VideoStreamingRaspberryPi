@@ -1,11 +1,12 @@
 # VideoStreamingServer
 Completed:
- T1 - Streams video from raspberry pi to desktop - 
- T2 - Recognizes Faces on client 
+T1 - Streams video from raspberry pi to desktop - 
+T2 - Recognizes Faces on client
+
 In progress:
- T3 - Change the transmission Protocol to UDP for increased frame rate. 
- T4 - Flask Webapp for accessing video stream online. 
- T5 - Upgrade face recognition to recognize specific faces and label them. 
+T3 - Change the transmission Protocol to UDP for increased frame rate. 
+T4 - Flask Webapp for accessing video stream online. 
+T5 - Upgrade face recognition to recognize specific faces and label them. 
  
 Server uses python3-sockets to Listen for TCP connection from client.
 OPENCV is used to capture video on server(Raspberry Pi Zero 2 W).
